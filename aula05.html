@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var caneta = {
+            cor: 'Azul',
+            tinta: 3,
+            tampada: true,
+
+            escrever: function() {
+                if (this.tampada === false && this.tinta > 0) {
+                    console.log("A caneta esta escrevendo");
+                    this.tinta--;
+                } else if (this.tampada === true) {
+                    console.log("A caneta esta tampada");
+                } else {
+                    console.log("A caneta acabou a tinta");
+                }
+            },
+            tampar: function() {
+                if (this.tampada === false) {
+                    this.tampada = true;
+                    console.log("A caneta foi tampada");
+                } else {
+                    console.log("A caneta ja está tampada");
+                }
+            },
+            destampar: function() {
+                if (this.tampada === true) {
+                    this.tampada = false;
+                    console.log("A caneta foi aberta");
+                } else {
+                    console.log("A caneta ja ésta fechada");
+                }
+            }
+
+        }
+    </script>
+</body>
+
+</html>

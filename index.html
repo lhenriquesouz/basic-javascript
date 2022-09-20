@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('https://i0.wp.com/abglt.org.br/wp-content/uploads/2020/10/wallpaper-pc1-scaled-1.jpg?fit=2560%2C1440&ssl=1');
+        }
+        
+        .box {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: rgb(0, 50, 10) 0px 10px 20px -10px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 80px;
+            animation: slide 3s linear 2ms infinite alternate;
+            animation-name: slide;
+        }
+        
+        @keyframes slide {
+            from {
+                border-top: 2px solid green;
+                width: 20px
+            }
+            to {
+                border-top: 2px solid red;
+                width: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Ola mundo</h1>
+    </div>
+</body>
+
+</html>
