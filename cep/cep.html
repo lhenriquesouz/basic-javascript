@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="margem">
+        <div class="cabecalho">
+            <h2>CEP</h2>
+        </div>
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="cep">CEP</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="cep" onblur="pesquisaCep(this.value)">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="logradouro">Logradouro</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="logradouro">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="bairro">Bairro</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="bairro">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="cidade">Cidade</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="cidade">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="estado">Estado</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="estado">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-100">
+                        <input type="submit" id="limpar" value="Limpar" onclick="limparFormularioCep()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

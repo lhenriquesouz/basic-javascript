@@ -1,0 +1,27 @@
+# REGEX
+### \d ou [0-9]
+    - pega todos os numeros de 0 à 9
+### \D ou ^ 
+    - é a mesma coisa que negar, caso colocarmos o \D ele pega tudo menos os numeros, essa negação do ^ é somente dentro do colchetes []
+    - Caso o ^ esteja fora do colchetes o mesmo serve para ser obrigatório começar com tal especificação.
+### 0{2} 
+    - trás todos os números zeros que estão juntos com a quantidade que definirmos dentro do {}, neste caso dois zeros juntos.
+### ^(\d{3})\D?(\d{3})\D?(\d{3})\D?(\d{2})$ 
+    - Valida CPF
+### ^(\d{2})\D?(\d{3})\D?(\d{3})\D?(\d{4})\D?(\d{2})$ 
+    - Valida CNPJ
+### ^(\d{5})\D?(\d{3})$ 
+    - Valida CEP
+### ^\D?(\d{2})\D?\D?(\d{4})\D?(\d{4})$ 
+    - Valida Telefone fixo
+### ^\D?(\d{2})\D?\D?(\d{4,5})\D?(\d{4})$ 
+    - Valida telefone fixo e celular
+### \s 
+    - procura por espaço
+### *
+    - Mostra que pega qualquer coisa até, caso colocarmos o *@ em um email, pegariamos todos os caracteres até o @    
+
+### Quando colocamos no regex o parênteses "()" é como se criassemos uma variável e podemos atribuir a ela $1 $2 $3 $4 
+
+### ?= 
+- significa que tem que ser antes do caractere que está na frente, isso podemos usar quando temos um número de 0 à 9 e queremos colcoar o 09 por exemplo. 
